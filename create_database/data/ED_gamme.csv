@@ -1,0 +1,10 @@
+CodeG,NomG,PrixKM,PrixJour,PrixBase
+1,Citadine,0.25,29.9,19.0
+2,Compacte,0.28,39.9,25.0
+3,Grande,0.32,49.9,30.0
+4,Monospace,0.35,59.9,35.0
+5,Utilitaire 3m3,0.4,44.9,22.0
+6,Utilitaire 6m3,0.45,54.9,28.0
+7,Utilitaire 9m3,0.48,64.90,31.00
+8,Utilitaire 12m3,0.52,74.9,33.0
+9,Utilitaire 20m3,0.6,99.9,45.0
