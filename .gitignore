@@ -1,0 +1,5 @@
+/create_database/log
+*.xlsx
+*.docx
+*.doc
+*.pdf
