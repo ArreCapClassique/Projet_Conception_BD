@@ -1,0 +1,201 @@
+CodeC,NomC,PrenomC,RueC,CPC,VilleC,RegionC,CodeSoc
+1,Marchand,Arthur,164 Boulevard de la République,89900,Avignon,Provence-Alpes-Côte d'Azur,32694013584309
+2,Vincent,Axel,147 Rue de la Paix,47000,Metz,Grand Est,60918513369771
+3,Martin,Léa,62 Avenue Victor Hugo,73250,Quimper,Bretagne,91353961217109
+4,Girard,Emma,202 Rue du Général de Gaulle,26800,Nîmes,Occitanie,10112206654382
+5,Louis,Maya,90 Rue des Fleurs,23350,Angers,Pays de la Loire,56301570407756
+6,Martin,Lucas,193 Rue des Fleurs,03450,Saint-Étienne,Auvergne-Rhône-Alpes,16675263696923
+7,Germain,Lucas,187 Rue Nationale,41300,Nevers,Bourgogne-Franche-Comté,94532380814008
+8,Poirier,Romane,135 Boulevard de la République,53450,Annecy,Auvergne-Rhône-Alpes,60918513369771
+9,Lefebvre,Ethan,39 Avenue Victor Hugo,29000,Chalon-sur-Saône,Bourgogne-Franche-Comté,27276983771370
+10,Lambert,Lucas,42 Place de la Liberté,12800,Le Havre,Normandie,29378224529391
+11,Louis,Léa,123 Avenue Victor Hugo,71100,Bastia,Corsica,56301570407756
+12,Masson,Ethan,148 Boulevard de la République,39000,Caen,Normandie,94904108537244
+13,Henry,Clara,57 Rue de Paris,54500,Chalon-sur-Saône,Bourgogne-Franche-Comté,91353961217109
+14,Leroy,Lina,59 Avenue des Champs-Élysées,42250,Bourges,Centre-Val de Loire,22158649305494
+15,Deschamps,Manon,109 Rue de la Paix,44600,Lille,Hauts-de-France,23412772661527
+16,Lambert,Axel,45 Rue Nationale,40400,Limoges,Nouvelle-Aquitaine,66067774000364
+17,Richard,Manon,28 Rue de Paris,02250,Calais,Hauts-de-France,91353961217109
+18,Leroy,Martin,220 Rue de Paris,18500,Angers,Pays de la Loire,62432903831124
+19,Martin,Adam,68 Boulevard de la République,02450,Cherbourg,Normandie,62432903831124
+20,Petit,Jade,26 Rue de Paris,87800,Roubaix,Hauts-de-France,52721301541202
+21,Colin,Mila,78 Rue Nationale,13900,Paris,Île-de-France,89557732603090
+22,Garcia,Lou,8 Place de la Liberté,16400,Saint-Denis,Île-de-France,14311775001461
+23,Masson,Ethan,69 Rue des Fleurs,46500,Paris,Île-de-France,55684391399192
+24,Martin,Manon,193 Rue des Fleurs,11900,Cholet,Pays de la Loire,21806475533626
+25,Lambert,Léo,31 Rue des Fleurs,17500,Dijon,Bourgogne-Franche-Comté,31935952274312
+26,Muller,Sara,66 Rue Nationale,10700,Perpignan,Occitanie,31935952274312
+27,Colin,Axel,33 Rue Nationale,66900,Metz,Grand Est,55684391399192
+28,Richard,Inès,113 Rue de Paris,51900,Angers,Pays de la Loire,31935952274312
+29,Laurent,Hugo,151 Rue de Paris,42450,Caen,Normandie,57198241195598
+30,Robert,Sofia,61 Boulevard de la République,93200,Bastia,Corsica,93575605313660
+31,Devaux,Léo,139 Avenue des Champs-Élysées,66900,Ajaccio,Corsica,54771634497881
+32,Renard,Ethan,129 Rue Nationale,49000,Poitiers,Nouvelle-Aquitaine,70723576553460
+33,Renard,Emma,111 Avenue Victor Hugo,67400,Tours,Centre-Val de Loire,16675263696923
+34,Andre,Emma,74 Rue des Fleurs,61350,Montpellier,Occitanie,22158649305494
+35,Leclerc,Louis,84 Rue de Paris,82200,Limoges,Nouvelle-Aquitaine,72777356436755
+36,Roux,Lina,55 Rue de Paris,49800,Strasbourg,Grand Est,56301570407756
+37,Richard,Maya,104 Rue Nationale,42000,Mulhouse,Grand Est,72777356436755
+38,Blanc,Lou,126 Place de la Liberté,56600,Paris,Île-de-France,52308740478567
+39,Simon,Mohamed,55 Rue Nationale,28350,Toulon,Provence-Alpes-Côte d'Azur,62432903831124
+40,Germain,Louis,19 Avenue des Champs-Élysées,86250,Besançon,Bourgogne-Franche-Comté,94904108537244
+41,Colin,Hugo,114 Avenue Victor Hugo,17250,Amiens,Hauts-de-France,91353961217109
+42,Blanc,Léa,97 Avenue des Champs-Élysées,44800,Mulhouse,Grand Est,94904108537244
+43,Dupont,Lina,220 Boulevard de la République,65000,Ajaccio,Corsica,29378224529391
+44,Barbier,Arthur,26 Boulevard de la République,65000,Rennes,Bretagne,93575605313660
+45,Lefebvre,Hugo,66 Boulevard de la République,05100,Avignon,Provence-Alpes-Côte d'Azur,10160678844935
+46,Richard,Adam,218 Rue du Général de Gaulle,70300,Avignon,Provence-Alpes-Côte d'Azur,10112206654382
+47,Fournier,Romane,9 Rue de la Paix,92500,Bourges,Centre-Val de Loire,74570847696182
+48,Girard,Adam,158 Rue des Fleurs,63250,Marseille,Provence-Alpes-Côte d'Azur,10112206654382
+49,Martinez,Axel,123 Avenue des Champs-Élysées,44900,Ajaccio,Corsica,52809577153890
+50,Garcia,Alice,154 Avenue Victor Hugo,46500,Bastia,Corsica,86833018343743
+51,Dubois,Sofia,143 Avenue Victor Hugo,06800,Ajaccio,Corsica,15075790748492
+52,Laurent,Lou,51 Rue de Paris,58000,Strasbourg,Grand Est,80767867500085
+53,Perrot,Noa,198 Avenue Victor Hugo,18450,Chartres,Centre-Val de Loire,60918513369771
+54,Leclerc,Eliott,85 Rue de Paris,03400,Nîmes,Occitanie,60362039920918
+55,Germain,Julie,27 Rue des Fleurs,70900,Annecy,Auvergne-Rhône-Alpes,17714329814317
+56,Renard,Mehdi,137 Avenue des Champs-Élysées,40600,Calais,Hauts-de-France,10112206654382
+57,Blanc,Léo,175 Rue de la Paix,21600,Grenoble,Auvergne-Rhône-Alpes,22158649305494
+58,Rousseau,Mehdi,28 Place de la Liberté,08450,Orléans,Centre-Val de Loire,31935952274312
+59,Blanc,Ethan,148 Rue Nationale,74500,Cherbourg,Normandie,93575605313660
+60,Moreau,Hugo,57 Rue des Fleurs,31700,Chalon-sur-Saône,Bourgogne-Franche-Comté,35104074927247
+61,Mercier,Sofia,26 Rue Nationale,69450,Calais,Hauts-de-France,29378224529391
+62,Martinez,Inès,159 Rue de la Paix,27100,Perpignan,Occitanie,54771634497881
+63,Petit,Ethan,183 Rue des Fleurs,56400,Toulouse,Occitanie,56301570407756
+64,Devaux,Manon,197 Rue de la Paix,04700,Dijon,Bourgogne-Franche-Comté,14311775001461
+65,Lambert,Jules,45 Rue des Fleurs,76600,Le Havre,Normandie,91353961217109
+66,Roux,Jade,147 Avenue des Champs-Élysées,59100,Chartres,Centre-Val de Loire,35104074927247
+67,Leroy,Maxime,40 Avenue des Champs-Élysées,77000,Bordeaux,Nouvelle-Aquitaine,10160678844935
+68,Dupont,Jules,180 Place de la Liberté,13300,Boulogne-Billancourt,Île-de-France,15075790748492
+69,Bernard,Eliott,120 Rue des Fleurs,21450,Montpellier,Occitanie,63323967074368
+70,Fournier,Mila,187 Avenue des Champs-Élysées,62100,Perpignan,Occitanie,86833018343743
+71,Renard,Anaïs,80 Avenue Victor Hugo,35500,Bordeaux,Nouvelle-Aquitaine,70723576553460
+72,Muller,Ethan,131 Place de la Liberté,02450,Nevers,Bourgogne-Franche-Comté,29378224529391
+73,Marchand,Lina,55 Avenue Victor Hugo,05350,Bastia,Corsica,65566249373348
+74,Francois,Léo,59 Rue Nationale,66200,Lyon,Auvergne-Rhône-Alpes,55684391399192
+75,Thomas,Mila,196 Avenue des Champs-Élysées,54400,Bordeaux,Nouvelle-Aquitaine,26060670202394
+76,Petit,Paul,23 Avenue Victor Hugo,81200,Calais,Hauts-de-France,91353961217109
+77,Laurent,Adam,48 Rue des Fleurs,22800,Avignon,Provence-Alpes-Côte d'Azur,52809577153890
+78,Garcia,Romane,118 Rue du Général de Gaulle,85800,Roubaix,Hauts-de-France,26060670202394
+79,Simon,Romane,154 Place de la Liberté,41450,Bourges,Centre-Val de Loire,52721301541202
+80,Gautier,Hugo,85 Boulevard de la République,43000,Le Havre,Normandie,10112206654382
+81,Richard,Axel,151 Avenue Victor Hugo,66250,Versailles,Île-de-France,90444751464970
+82,Renard,Eliott,122 Rue des Fleurs,18450,Saint-Étienne,Auvergne-Rhône-Alpes,65566249373348
+83,Garcia,Mohamed,8 Rue Nationale,72250,Brest,Bretagne,35104074927247
+84,Perrot,Anaïs,122 Rue du Général de Gaulle,77300,Ajaccio,Corsica,93575605313660
+85,Muller,Camille,169 Rue des Fleurs,35300,Caen,Normandie,16675263696923
+86,Muller,Louis,205 Rue de la Paix,68900,Annecy,Auvergne-Rhône-Alpes,56301570407756
+87,Martin,Lina,167 Rue de la Paix,63300,Pau,Nouvelle-Aquitaine,16675263696923
+88,Marchand,Axel,180 Rue du Général de Gaulle,90250,Saint-Étienne,Auvergne-Rhône-Alpes,56301570407756
+89,Renard,Emma,193 Place de la Liberté,05400,Boulogne-Billancourt,Île-de-France,60918513369771
+90,Garcia,Eliott,165 Rue du Général de Gaulle,36500,Chartres,Centre-Val de Loire,66067774000364
+91,Fournier,Gabin,208 Rue des Fleurs,02800,Marseille,Provence-Alpes-Côte d'Azur,17714329814317
+92,Moreau,Ambre,115 Rue de la Paix,42900,Angers,Pays de la Loire,57198241195598
+93,Lefebvre,Maya,132 Rue du Général de Gaulle,73800,Saint-Étienne,Auvergne-Rhône-Alpes,52809577153890
+94,Vincent,Noa,68 Rue du Général de Gaulle,83500,Toulouse,Occitanie,86833018343743
+95,Perrot,Lina,158 Boulevard de la République,40000,Cherbourg,Normandie,14311775001461
+96,Poirier,Lou,79 Avenue Victor Hugo,23100,Angers,Pays de la Loire,80767867500085
+97,Garcia,Axel,134 Rue du Général de Gaulle,65000,Boulogne-Billancourt,Île-de-France,55684391399192
+98,Muller,Théo,183 Boulevard de la République,13700,Annecy,Auvergne-Rhône-Alpes,14311775001461
+99,Henry,Nathan,136 Rue de la Paix,68400,Bastia,Corsica,26060670202394
+100,Bernard,Sara,7 Rue du Général de Gaulle,43600,Brest,Bretagne,66067774000364
+101,Blanc,Romane,153 Rue Nationale,51800,Ajaccio,Corsica,27276983771370
+102,Louis,Lina,52 Rue du Général de Gaulle,18350,Dijon,Bourgogne-Franche-Comté,72777356436755
+103,Leclerc,Mehdi,23 Avenue des Champs-Élysées,40700,Caen,Normandie,19688042759676
+104,Bonnet,Théo,52 Rue de Paris,91250,Cherbourg,Normandie,93575605313660
+105,Dupont,Maya,43 Rue Nationale,79400,Nîmes,Occitanie,72777356436755
+106,Girard,Paul,50 Rue des Fleurs,69900,Chartres,Centre-Val de Loire,94904108537244
+107,Martinez,Léa,136 Place de la Liberté,37700,Roubaix,Hauts-de-France,80767867500085
+108,Poirier,Ethan,147 Place de la Liberté,46250,Limoges,Nouvelle-Aquitaine,52809577153890
+109,Colin,Lucas,64 Boulevard de la République,26700,Poitiers,Nouvelle-Aquitaine,57198241195598
+110,Gautier,Inès,81 Rue de la Paix,33200,Toulouse,Occitanie,89557732603090
+111,Fournier,Paul,56 Rue des Fleurs,55600,Caen,Normandie,52308740478567
+112,Lambert,Mehdi,108 Rue des Fleurs,49250,Dijon,Bourgogne-Franche-Comté,56301570407756
+113,Colin,Inès,9 Rue de la Paix,23400,Nîmes,Occitanie,63323967074368
+114,Deschamps,Emma,88 Rue de Paris,54800,Tours,Centre-Val de Loire,10112206654382
+115,Girard,Chloé,7 Place de la Liberté,64500,Poitiers,Nouvelle-Aquitaine,52308740478567
+116,Blanc,Léo,58 Boulevard de la République,80100,Orléans,Centre-Val de Loire,60918513369771
+117,Colin,Eliott,64 Rue de la Paix,44100,Bordeaux,Nouvelle-Aquitaine,54771634497881
+118,Germain,Alice,151 Boulevard de la République,75100,Toulouse,Occitanie,60918513369771
+119,Masson,Hugo,8 Rue de la Paix,63600,Amiens,Hauts-de-France,29378224529391
+120,Vincent,Emma,132 Rue de la Paix,95700,Limoges,Nouvelle-Aquitaine,63323967074368
+121,Lambert,Yanis,72 Avenue des Champs-Élysées,83900,Amiens,Hauts-de-France,
+122,Devaux,Mila,55 Rue Nationale,59200,Caen,Normandie,
+123,Leroy,Clara,104 Avenue Victor Hugo,88800,Pau,Nouvelle-Aquitaine,
+124,Germain,Léa,44 Rue du Général de Gaulle,39100,Ajaccio,Corsica,
+125,Lefebvre,Nathan,41 Rue de Paris,03400,Tours,Centre-Val de Loire,
+126,Moreau,Hugo,96 Rue des Fleurs,08300,Limoges,Nouvelle-Aquitaine,
+127,Thomas,Gabin,67 Avenue des Champs-Élysées,40500,Metz,Grand Est,
+128,Marchand,Mehdi,207 Rue de la Paix,76600,Limoges,Nouvelle-Aquitaine,
+129,Francois,Lou,128 Place de la Liberté,54200,Le Havre,Normandie,
+130,Renard,Chloé,123 Rue du Général de Gaulle,07100,Boulogne-Billancourt,Île-de-France,
+131,Michel,Lou,79 Rue de la Paix,15500,Avignon,Provence-Alpes-Côte d'Azur,
+132,Richard,Manon,135 Place de la Liberté,35350,Brest,Bretagne,
+133,Francois,Clara,166 Rue de Paris,91000,Versailles,Île-de-France,
+134,Vincent,Louis,157 Rue du Général de Gaulle,16200,Bastia,Corsica,
+135,Garcia,Louis,130 Rue des Fleurs,17200,Nice,Provence-Alpes-Côte d'Azur,
+136,Richard,Nina,43 Boulevard de la République,45500,Lille,Hauts-de-France,
+137,Boyer,Ambre,52 Rue Nationale,50600,Avignon,Provence-Alpes-Côte d'Azur,
+138,Henry,Alice,126 Avenue des Champs-Élysées,72300,Ajaccio,Corsica,
+139,Renard,Camille,198 Place de la Liberté,40450,Chalon-sur-Saône,Bourgogne-Franche-Comté,
+140,Leclerc,Anaïs,55 Rue de Paris,74900,Lille,Hauts-de-France,
+141,Rousseau,Inès,105 Rue du Général de Gaulle,70250,Paris,Île-de-France,
+142,Henry,Tom,111 Rue Nationale,71250,Bastia,Corsica,
+143,Laurent,Gabin,84 Rue Nationale,22700,Cholet,Pays de la Loire,
+144,Petit,Arthur,176 Rue des Fleurs,87200,Brest,Bretagne,
+145,Deschamps,Nina,56 Avenue des Champs-Élysées,87000,Toulon,Provence-Alpes-Côte d'Azur,
+146,Muller,Adam,218 Boulevard de la République,30500,Pau,Nouvelle-Aquitaine,
+147,Vincent,Yanis,4 Rue du Général de Gaulle,89400,Calais,Hauts-de-France,
+148,Bernard,Mohamed,213 Boulevard de la République,38250,Bastia,Corsica,
+149,Lefebvre,Mehdi,207 Rue du Général de Gaulle,75700,Chartres,Centre-Val de Loire,
+150,Louis,Jules,52 Rue de Paris,55400,Quimper,Bretagne,
+151,Durand,Léo,26 Rue de la Paix,77800,Versailles,Île-de-France,
+152,Robert,Anaïs,116 Rue des Fleurs,39600,Pau,Nouvelle-Aquitaine,
+153,Colin,Sara,169 Avenue Victor Hugo,22000,Vannes,Bretagne,
+154,Martinez,Mohamed,199 Avenue des Champs-Élysées,12600,Lyon,Auvergne-Rhône-Alpes,
+155,Leroy,Maya,157 Rue de Paris,37300,Metz,Grand Est,
+156,Louis,Evan,79 Place de la Liberté,55300,Rennes,Bretagne,
+157,Thomas,Gabin,74 Rue de Paris,66000,Lille,Hauts-de-France,
+158,Muller,Valentin,4 Place de la Liberté,58000,Pau,Nouvelle-Aquitaine,
+159,Gautier,Tom,59 Rue des Fleurs,73300,Orléans,Centre-Val de Loire,
+160,Perrot,Maxime,59 Avenue des Champs-Élysées,57350,Chartres,Centre-Val de Loire,
+161,Simon,Adam,5 Rue de Paris,07400,Calais,Hauts-de-France,
+162,Girard,Martin,172 Rue Nationale,52300,Quimper,Bretagne,
+163,Vincent,Mehdi,54 Rue des Fleurs,70250,Lille,Hauts-de-France,
+164,Boyer,Manon,111 Rue du Général de Gaulle,13900,Nîmes,Occitanie,
+165,Henry,Lucas,126 Rue de la Paix,68800,Besançon,Bourgogne-Franche-Comté,
+166,Henry,Alice,95 Avenue des Champs-Élysées,77200,Tours,Centre-Val de Loire,
+167,Barbier,Maya,5 Place de la Liberté,64400,Boulogne-Billancourt,Île-de-France,
+168,Colin,Romane,110 Avenue des Champs-Élysées,94900,Nantes,Pays de la Loire,
+169,Roux,Jules,61 Rue de la Paix,57200,Saint-Étienne,Auvergne-Rhône-Alpes,
+170,Martinez,Mila,108 Place de la Liberté,39000,Chartres,Centre-Val de Loire,
+171,Bernard,Adam,60 Rue Nationale,15100,Saint-Denis,Île-de-France,
+172,Durand,Lucas,144 Avenue des Champs-Élysées,54000,Toulouse,Occitanie,
+173,Fournier,Inès,204 Boulevard de la République,38300,Bastia,Corsica,
+174,Richard,Valentin,148 Rue Nationale,09100,Dijon,Bourgogne-Franche-Comté,
+175,Muller,Zoé,50 Place de la Liberté,50400,Bordeaux,Nouvelle-Aquitaine,
+176,Thomas,Chloé,107 Avenue Victor Hugo,72600,Lille,Hauts-de-France,
+177,Garcia,Gabin,42 Rue Nationale,92450,Roubaix,Hauts-de-France,
+178,Renard,Louna,135 Rue de Paris,28400,Strasbourg,Grand Est,
+179,Moreau,Nicolas,93 Rue Nationale,13700,Annecy,Auvergne-Rhône-Alpes,
+180,Andre,Jules,194 Rue de Paris,05700,Le Mans,Pays de la Loire,
+181,Gautier,Mohamed,212 Avenue Victor Hugo,22300,Saint-Denis,Île-de-France,
+182,Henry,Zoé,191 Avenue Victor Hugo,74900,Calais,Hauts-de-France,
+183,Roux,Romane,28 Boulevard de la République,21450,Saint-Denis,Île-de-France,
+184,Girard,Eliott,123 Boulevard de la République,81100,Besançon,Bourgogne-Franche-Comté,
+185,Leroy,Anaïs,80 Rue de Paris,41450,Amiens,Hauts-de-France,
+186,Louis,Valentin,49 Rue de Paris,28900,Mulhouse,Grand Est,
+187,Deschamps,Paul,61 Place de la Liberté,93700,Bastia,Corsica,
+188,Bernard,Tom,152 Rue de Paris,26100,Quimper,Bretagne,
+189,Perrot,Louis,51 Rue Nationale,23450,Calais,Hauts-de-France,
+190,Dupont,Zoé,112 Rue des Fleurs,41000,Calais,Hauts-de-France,
+191,Robert,Théo,44 Rue du Général de Gaulle,47500,Cherbourg,Normandie,
+192,Renard,Jade,205 Place de la Liberté,41700,Montpellier,Occitanie,
+193,Bernard,Maxime,40 Boulevard de la République,57900,Perpignan,Occitanie,
+194,Poirier,Nicolas,130 Rue de la Paix,64000,Limoges,Nouvelle-Aquitaine,
+195,Louis,Jules,78 Place de la Liberté,41500,Roubaix,Hauts-de-France,
+196,Michel,Gabin,147 Boulevard de la République,02900,Cholet,Pays de la Loire,
+197,Louis,Zoé,125 Place de la Liberté,95350,Avignon,Provence-Alpes-Côte d'Azur,
+198,Thomas,Camille,151 Avenue Victor Hugo,36500,Strasbourg,Grand Est,
+199,Michel,Martin,199 Rue de Paris,95100,Tours,Centre-Val de Loire,
+200,Gautier,Zoé,92 Avenue des Champs-Élysées,39800,Metz,Grand Est,
