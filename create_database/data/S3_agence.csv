@@ -1,0 +1,148 @@
+CodeAg,NomAG,TypeAg,CPAG,RueAG,VilleAG,QuartierAG
+1,LOCALIGHT Ajaccio Gare,aéroport,44819,177 Rue de Paris,Ajaccio,Gare
+2,LOCALIGHT Ajaccio Parc,aéroport,14885,175 Boulevard de la République,Ajaccio,Parc
+3,LOCALIGHT Ajaccio Port,ville,47791,166 Avenue des Champs-Élysées,Ajaccio,Port
+4,LOCALIGHT Amiens Centre,gare,22021,131 Rue des Fleurs,Amiens,Centre
+5,LOCALIGHT Amiens Université,aéroport,01819,27 Boulevard de la République,Amiens,Université
+6,LOCALIGHT Amiens Port,ville,03572,99 Rue Nationale,Amiens,Port
+7,LOCALIGHT Angers Est,aéroport,14165,137 Place de la Liberté,Angers,Est
+8,LOCALIGHT Angers Vieux-Quartier,ville,90548,28 Avenue Victor Hugo,Angers,Vieux-Quartier
+9,LOCALIGHT Angers Nord,aéroport,31403,151 Rue Nationale,Angers,Nord
+10,LOCALIGHT Annecy Est,aéroport,32003,23 Boulevard de la République,Annecy,Est
+11,LOCALIGHT Annecy Gare,gare,56725,86 Rue du Général de Gaulle,Annecy,Gare
+12,LOCALIGHT Annecy Université,ville,43516,179 Rue de la Paix,Annecy,Université
+13,LOCALIGHT Avignon Ouest,ville,08583,71 Boulevard de la République,Avignon,Ouest
+14,LOCALIGHT Avignon Centre,gare,81006,213 Avenue Victor Hugo,Avignon,Centre
+15,LOCALIGHT Avignon Aéroport,gare,15306,163 Avenue Victor Hugo,Avignon,Aéroport
+16,LOCALIGHT Bastia Université,ville,46800,9 Rue de la Paix,Bastia,Université
+17,LOCALIGHT Bastia Est,gare,03998,105 Rue de Paris,Bastia,Est
+18,LOCALIGHT Bastia Aéroport,ville,19483,1 Avenue des Champs-Élysées,Bastia,Aéroport
+19,LOCALIGHT Besançon Université,ville,75719,91 Place de la Liberté,Besançon,Université
+20,LOCALIGHT Besançon Parc,gare,45067,170 Rue du Général de Gaulle,Besançon,Parc
+21,LOCALIGHT Besançon Aéroport,gare,42784,59 Rue de Paris,Besançon,Aéroport
+22,LOCALIGHT Bordeaux Université,aéroport,04955,41 Rue de Paris,Bordeaux,Université
+23,LOCALIGHT Bordeaux Sud,ville,68377,138 Avenue des Champs-Élysées,Bordeaux,Sud
+24,LOCALIGHT Bordeaux Parc,gare,91452,5 Avenue Victor Hugo,Bordeaux,Parc
+25,LOCALIGHT Boulogne-Billancourt Gare,ville,12563,74 Rue Nationale,Boulogne-Billancourt,Gare
+26,LOCALIGHT Boulogne-Billancourt Université,gare,29101,65 Rue du Général de Gaulle,Boulogne-Billancourt,Université
+27,LOCALIGHT Boulogne-Billancourt Port,gare,83507,82 Rue de Paris,Boulogne-Billancourt,Port
+28,LOCALIGHT Bourges Est,gare,16883,92 Boulevard de la République,Bourges,Est
+29,LOCALIGHT Bourges Gare,aéroport,31590,5 Avenue Victor Hugo,Bourges,Gare
+30,LOCALIGHT Bourges Université,ville,53202,96 Rue du Général de Gaulle,Bourges,Université
+31,LOCALIGHT Brest Université,gare,55814,149 Boulevard de la République,Brest,Université
+32,LOCALIGHT Brest Est,gare,08660,10 Avenue des Champs-Élysées,Brest,Est
+33,LOCALIGHT Brest Affaires,aéroport,05785,92 Rue du Général de Gaulle,Brest,Affaires
+34,LOCALIGHT Caen Centre,ville,12571,102 Rue du Général de Gaulle,Caen,Centre
+35,LOCALIGHT Caen Nord,aéroport,15275,22 Rue des Fleurs,Caen,Nord
+36,LOCALIGHT Caen Sud,aéroport,42601,79 Rue de Paris,Caen,Sud
+37,LOCALIGHT Calais Centre,ville,93086,20 Rue Nationale,Calais,Centre
+38,LOCALIGHT Calais Port,gare,78863,208 Rue Nationale,Calais,Port
+39,LOCALIGHT Calais Gare,aéroport,35253,104 Rue Nationale,Calais,Gare
+40,LOCALIGHT Chalon-sur-Saône Nord,aéroport,05278,109 Rue du Général de Gaulle,Chalon-sur-Saône,Nord
+41,LOCALIGHT Chalon-sur-Saône Parc,gare,73837,68 Boulevard de la République,Chalon-sur-Saône,Parc
+42,LOCALIGHT Chalon-sur-Saône Port,gare,87777,213 Rue de Paris,Chalon-sur-Saône,Port
+43,LOCALIGHT Chartres Sud,aéroport,49212,13 Rue Nationale,Chartres,Sud
+44,LOCALIGHT Chartres Université,aéroport,55793,199 Avenue des Champs-Élysées,Chartres,Université
+45,LOCALIGHT Chartres Gare,ville,89393,32 Place de la Liberté,Chartres,Gare
+46,LOCALIGHT Cherbourg Vieux-Quartier,ville,80801,128 Rue de Paris,Cherbourg,Vieux-Quartier
+47,LOCALIGHT Cherbourg Université,gare,92777,101 Rue de Paris,Cherbourg,Université
+48,LOCALIGHT Cherbourg Ouest,ville,53421,101 Rue du Général de Gaulle,Cherbourg,Ouest
+49,LOCALIGHT Cholet Université,gare,83258,2 Boulevard de la République,Cholet,Université
+50,LOCALIGHT Cholet Aéroport,gare,58023,33 Rue du Général de Gaulle,Cholet,Aéroport
+51,LOCALIGHT Cholet Affaires,aéroport,89618,209 Boulevard de la République,Cholet,Affaires
+52,LOCALIGHT Dijon Centre,aéroport,64887,66 Avenue Victor Hugo,Dijon,Centre
+53,LOCALIGHT Dijon Ouest,gare,30768,184 Rue du Général de Gaulle,Dijon,Ouest
+54,LOCALIGHT Dijon Vieux-Quartier,ville,77738,71 Rue du Général de Gaulle,Dijon,Vieux-Quartier
+55,LOCALIGHT Grenoble Nord,gare,72755,195 Rue Nationale,Grenoble,Nord
+56,LOCALIGHT Grenoble Université,ville,13261,37 Rue de la Paix,Grenoble,Université
+57,LOCALIGHT Grenoble Est,gare,03675,42 Rue de la Paix,Grenoble,Est
+58,LOCALIGHT Le Havre Centre,ville,39820,26 Avenue Victor Hugo,Le Havre,Centre
+59,LOCALIGHT Le Havre Gare,gare,27574,119 Rue de Paris,Le Havre,Gare
+60,LOCALIGHT Le Havre Port,aéroport,61319,30 Avenue des Champs-Élysées,Le Havre,Port
+61,LOCALIGHT Le Mans Parc,ville,17189,141 Rue du Général de Gaulle,Le Mans,Parc
+62,LOCALIGHT Le Mans Gare,aéroport,02265,156 Avenue Victor Hugo,Le Mans,Gare
+63,LOCALIGHT Le Mans Sud,ville,09586,15 Rue de Paris,Le Mans,Sud
+64,LOCALIGHT Lille Port,gare,51684,3 Rue des Fleurs,Lille,Port
+65,LOCALIGHT Lille Université,aéroport,59124,161 Place de la Liberté,Lille,Université
+66,LOCALIGHT Lille Est,ville,64908,171 Place de la Liberté,Lille,Est
+67,LOCALIGHT Limoges Port,aéroport,24974,132 Avenue des Champs-Élysées,Limoges,Port
+68,LOCALIGHT Limoges Vieux-Quartier,aéroport,94434,170 Rue de Paris,Limoges,Vieux-Quartier
+69,LOCALIGHT Limoges Gare,aéroport,37727,27 Rue de la Paix,Limoges,Gare
+70,LOCALIGHT Lyon Centre,ville,13232,188 Rue des Fleurs,Lyon,Centre
+71,LOCALIGHT Lyon Affaires,ville,78381,144 Rue Nationale,Lyon,Affaires
+72,LOCALIGHT Lyon Nord,gare,70735,9 Place de la Liberté,Lyon,Nord
+73,LOCALIGHT Marseille Université,gare,52776,76 Avenue des Champs-Élysées,Marseille,Université
+74,LOCALIGHT Marseille Centre,ville,35734,184 Rue des Fleurs,Marseille,Centre
+75,LOCALIGHT Marseille Port,aéroport,41163,214 Rue Nationale,Marseille,Port
+76,LOCALIGHT Metz Université,gare,23688,90 Boulevard de la République,Metz,Université
+77,LOCALIGHT Metz Centre,gare,62985,104 Rue des Fleurs,Metz,Centre
+78,LOCALIGHT Metz Gare,gare,41575,127 Rue de la Paix,Metz,Gare
+79,LOCALIGHT Montpellier Centre,ville,39714,196 Rue des Fleurs,Montpellier,Centre
+80,LOCALIGHT Montpellier Sud,gare,31867,209 Boulevard de la République,Montpellier,Sud
+81,LOCALIGHT Montpellier Gare,gare,11639,48 Rue des Fleurs,Montpellier,Gare
+82,LOCALIGHT Mulhouse Affaires,aéroport,12264,99 Rue des Fleurs,Mulhouse,Affaires
+83,LOCALIGHT Mulhouse Sud,aéroport,76200,186 Boulevard de la République,Mulhouse,Sud
+84,LOCALIGHT Mulhouse Port,ville,93262,204 Rue de la Paix,Mulhouse,Port
+85,LOCALIGHT Nantes Aéroport,gare,32972,134 Avenue Victor Hugo,Nantes,Aéroport
+86,LOCALIGHT Nantes Parc,ville,25368,122 Avenue Victor Hugo,Nantes,Parc
+87,LOCALIGHT Nantes Université,ville,85572,157 Rue de Paris,Nantes,Université
+88,LOCALIGHT Nevers Aéroport,gare,94486,213 Avenue Victor Hugo,Nevers,Aéroport
+89,LOCALIGHT Nevers Parc,ville,90529,80 Rue des Fleurs,Nevers,Parc
+90,LOCALIGHT Nevers Gare,aéroport,04901,74 Rue Nationale,Nevers,Gare
+91,LOCALIGHT Nice Port,gare,19741,183 Rue des Fleurs,Nice,Port
+92,LOCALIGHT Nice Aéroport,gare,52571,98 Rue des Fleurs,Nice,Aéroport
+93,LOCALIGHT Nice Centre,aéroport,40556,121 Boulevard de la République,Nice,Centre
+94,LOCALIGHT Nîmes Ouest,aéroport,55668,176 Rue Nationale,Nîmes,Ouest
+95,LOCALIGHT Nîmes Vieux-Quartier,aéroport,50987,218 Rue Nationale,Nîmes,Vieux-Quartier
+96,LOCALIGHT Nîmes Centre,aéroport,61706,21 Rue du Général de Gaulle,Nîmes,Centre
+97,LOCALIGHT Orléans Gare,ville,89905,163 Rue de la Paix,Orléans,Gare
+98,LOCALIGHT Orléans Université,aéroport,43565,15 Rue du Général de Gaulle,Orléans,Université
+99,LOCALIGHT Orléans Est,ville,29029,68 Rue des Fleurs,Orléans,Est
+100,LOCALIGHT Paris Sud,ville,34737,205 Place de la Liberté,Paris,Sud
+101,LOCALIGHT Paris Port,aéroport,62924,33 Place de la Liberté,Paris,Port
+102,LOCALIGHT Paris Centre,aéroport,66282,200 Place de la Liberté,Paris,Centre
+103,LOCALIGHT Pau Centre,aéroport,72142,78 Place de la Liberté,Pau,Centre
+104,LOCALIGHT Pau Port,aéroport,42647,117 Place de la Liberté,Pau,Port
+105,LOCALIGHT Pau Affaires,aéroport,46610,48 Avenue Victor Hugo,Pau,Affaires
+106,LOCALIGHT Perpignan Gare,aéroport,74946,204 Rue des Fleurs,Perpignan,Gare
+107,LOCALIGHT Perpignan Vieux-Quartier,ville,52738,112 Boulevard de la République,Perpignan,Vieux-Quartier
+108,LOCALIGHT Perpignan Centre,gare,52435,104 Rue Nationale,Perpignan,Centre
+109,LOCALIGHT Poitiers Centre,ville,51904,75 Rue du Général de Gaulle,Poitiers,Centre
+110,LOCALIGHT Poitiers Gare,aéroport,19557,194 Avenue Victor Hugo,Poitiers,Gare
+111,LOCALIGHT Poitiers Affaires,aéroport,64325,163 Rue du Général de Gaulle,Poitiers,Affaires
+112,LOCALIGHT Quimper Sud,aéroport,64483,70 Avenue Victor Hugo,Quimper,Sud
+113,LOCALIGHT Quimper Vieux-Quartier,ville,95504,112 Boulevard de la République,Quimper,Vieux-Quartier
+114,LOCALIGHT Quimper Aéroport,aéroport,37142,57 Place de la Liberté,Quimper,Aéroport
+115,LOCALIGHT Rennes Sud,ville,14659,214 Rue Nationale,Rennes,Sud
+116,LOCALIGHT Rennes Centre,ville,73571,210 Rue du Général de Gaulle,Rennes,Centre
+117,LOCALIGHT Rennes Université,gare,93988,143 Avenue Victor Hugo,Rennes,Université
+118,LOCALIGHT Roubaix Aéroport,gare,62862,137 Rue du Général de Gaulle,Roubaix,Aéroport
+119,LOCALIGHT Roubaix Centre,aéroport,29440,214 Rue Nationale,Roubaix,Centre
+120,LOCALIGHT Roubaix Gare,ville,52245,156 Rue de la Paix,Roubaix,Gare
+121,LOCALIGHT Rouen Parc,gare,30287,217 Avenue Victor Hugo,Rouen,Parc
+122,LOCALIGHT Rouen Vieux-Quartier,gare,91226,150 Rue de la Paix,Rouen,Vieux-Quartier
+123,LOCALIGHT Rouen Ouest,gare,13640,10 Avenue des Champs-Élysées,Rouen,Ouest
+124,LOCALIGHT Saint-Denis Université,aéroport,02903,11 Place de la Liberté,Saint-Denis,Université
+125,LOCALIGHT Saint-Denis Aéroport,gare,71250,176 Avenue Victor Hugo,Saint-Denis,Aéroport
+126,LOCALIGHT Saint-Denis Port,ville,28103,161 Rue Nationale,Saint-Denis,Port
+127,LOCALIGHT Saint-Étienne Centre,aéroport,57377,201 Boulevard de la République,Saint-Étienne,Centre
+128,LOCALIGHT Saint-Étienne Parc,gare,27551,25 Place de la Liberté,Saint-Étienne,Parc
+129,LOCALIGHT Saint-Étienne Nord,ville,53780,71 Place de la Liberté,Saint-Étienne,Nord
+130,LOCALIGHT Strasbourg Vieux-Quartier,ville,41555,204 Rue des Fleurs,Strasbourg,Vieux-Quartier
+131,LOCALIGHT Strasbourg Ouest,ville,18660,49 Place de la Liberté,Strasbourg,Ouest
+132,LOCALIGHT Strasbourg Université,gare,84916,73 Place de la Liberté,Strasbourg,Université
+133,LOCALIGHT Toulon Port,gare,62548,203 Rue Nationale,Toulon,Port
+134,LOCALIGHT Toulon Aéroport,aéroport,01306,173 Avenue des Champs-Élysées,Toulon,Aéroport
+135,LOCALIGHT Toulon Nord,ville,86349,8 Avenue des Champs-Élysées,Toulon,Nord
+136,LOCALIGHT Toulouse Affaires,gare,47555,30 Boulevard de la République,Toulouse,Affaires
+137,LOCALIGHT Toulouse Aéroport,aéroport,60422,215 Rue du Général de Gaulle,Toulouse,Aéroport
+138,LOCALIGHT Toulouse Nord,ville,86664,161 Rue de Paris,Toulouse,Nord
+139,LOCALIGHT Tours Centre,ville,31223,118 Rue de Paris,Tours,Centre
+140,LOCALIGHT Tours Nord,aéroport,74141,32 Rue Nationale,Tours,Nord
+141,LOCALIGHT Tours Aéroport,gare,66922,120 Rue de la Paix,Tours,Aéroport
+142,LOCALIGHT Vannes Port,aéroport,62112,177 Place de la Liberté,Vannes,Port
+143,LOCALIGHT Vannes Centre,gare,11418,19 Rue de Paris,Vannes,Centre
+144,LOCALIGHT Vannes Affaires,gare,38546,8 Rue des Fleurs,Vannes,Affaires
+145,LOCALIGHT Versailles Ouest,gare,88085,154 Rue des Fleurs,Versailles,Ouest
+146,LOCALIGHT Versailles Affaires,ville,01139,184 Avenue Victor Hugo,Versailles,Affaires
+147,LOCALIGHT Versailles Gare,ville,15941,96 Rue de Paris,Versailles,Gare

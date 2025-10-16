@@ -1,0 +1,14 @@
+LOAD DATA
+APPEND
+INTO TABLE S3_AGENCE
+FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"' 
+TRAILING NULLCOLS
+(
+  CodeAg       INTEGER EXTERNAL,
+  NomAG        CHAR,
+  TypeAg       CHAR,
+  CPAG         CHAR,
+  RueAG        CHAR,
+  VilleAG      CHAR,
+  QuartierAG   CHAR
+)
