@@ -1,5 +1,5 @@
 -- =====================================================================
--- INSERTS: VEHICULE  (完全按你给的 NoImmat–NomMO–DateAchat)
+-- INSERTS: VEHICULE
 -- =====================================================================
 INSERT INTO Vehicule (NoImmat, CodeMO, DateAchat) VALUES
 ('AA-001-AA', 1,   TO_DATE('16/05/2017','DD/MM/YYYY')),
@@ -103,5 +103,6 @@ INSERT INTO Vehicule (NoImmat, CodeMO, DateAchat) VALUES
 ('AA-001-DU', 99,  TO_DATE('22/08/2015','DD/MM/YYYY')),
 ('AA-001-DV', 100, TO_DATE('03/02/2024','DD/MM/YYYY')),
 ('AA-001-DW', 101, TO_DATE('15/03/2020','DD/MM/YYYY'));
+
 
 COMMIT;
