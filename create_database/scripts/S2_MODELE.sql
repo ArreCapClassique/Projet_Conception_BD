@@ -1,4 +1,4 @@
-/* ===================== CLEAN ===================== */
+/* ===================== CLEAN  ===================== */
 
 /
 BEGIN EXECUTE IMMEDIATE 'DROP TABLE S2_VEHICULE'; EXCEPTION WHEN OTHERS THEN NULL; END;
