@@ -1,5 +1,5 @@
 BEGIN
-    -- Drop Fait and Dimension constraints first to avoid dependency errors
+    -- Drop constraints
     FOR c IN (
         SELECT constraint_name, table_name
         FROM user_constraints
@@ -7,7 +7,7 @@ BEGIN
             'FAIT_R_RESERVATION', 'FAIT_R_DEPLACEMENT',
             'MD_R_CLIENTGENE', 'MD_R_TEMP', 'MD_R_GAMME', 'MD_R_AGENCE'
         )
-        AND constraint_type IN ('P', 'R', 'U')  -- Primary, Foreign, Unique
+        AND constraint_type IN ('P', 'R', 'U')
     ) LOOP
         BEGIN
             EXECUTE IMMEDIATE 'ALTER TABLE ' || c.table_name || 
@@ -128,30 +128,6 @@ SELECT
 FROM ED_GAMME;
 
 
--- Dimension agence
-CREATE MATERIALIZED VIEW MD_R_AGENCE
-BUILD IMMEDIATE
-REFRESH COMPLETE ON DEMAND AS
-SELECT
-    CodeAg,
-    NomAG,
-    TypeAg,
-    CPAG,
-    RueAG,
-    VilleAG,
-    QuartierAG
-FROM BOCHENSOHANDSOME.S3_AGENCE;
-
-CREATE DIMENSION DIM_R_AGENCE
-    LEVEL CodeAg IS (MD_R_AGENCE.CodeAg)
-    LEVEL TypeAg IS (MD_R_AGENCE.TypeAg)
-    LEVEL QuartierAg IS (MD_R_AGENCE.QuartierAg)
-    LEVEL VilleAg IS (MD_R_AGENCE.VilleAg)
-HIERARCHY H_TypeAg (CodeAg CHILD OF TypeAg)
-HIERARCHY H_Agence (CodeAg CHILD OF QuartierAg CHILD OF VilleAg)
-ATTRIBUTE CodeAg DETERMINES (NomAg, CPAg, RueAg);
-
-
 -- Fait réservation
 CREATE MATERIALIZED VIEW FAIT_R_RESERVATION
 BUILD IMMEDIATE 
@@ -183,52 +159,3 @@ ALTER TABLE FAIT_R_RESERVATION
 ADD CONSTRAINT FK_Fait_Reservation_Temp FOREIGN KEY (DateDeb) REFERENCES MD_R_TEMP(DateDeb);
 ALTER TABLE FAIT_R_RESERVATION
 ADD CONSTRAINT FK_Fait_Reservation_Gamme FOREIGN KEY (CodeG) REFERENCES MD_R_GAMME(CodeG);
-
-
--- Fait déplacement
-CREATE MATERIALIZED VIEW FAIT_R_DEPLACEMENT
-BUILD IMMEDIATE
-REFRESH COMPLETE ON DEMAND AS
-WITH DEPARTURE AS (
-    SELECT
-        CodeAGDep AS CodeAg, 
-        DateDebSoc AS DateAg, 
-        COUNT(*) AS NbDep
-    FROM BOCHENSOHANDSOME.S3_ReserverSoc
-    GROUP BY CodeAGDep, DateDebSoc
-    UNION ALL
-    SELECT
-        CodeAGDep AS CodeAg, 
-        DateDebClt AS DateAg, 
-        COUNT(*) AS NbDep
-    FROM BOCHENSOHANDSOME.S3_ReserverPrive
-    GROUP BY CodeAGDep, DateDebClt
-),
-ARRIVAL AS (
-    SELECT
-        CodeAGRet AS CodeAg, 
-        DateFinSoc AS DateAg, 
-        COUNT(*) AS NbRet
-    FROM BOCHENSOHANDSOME.S3_ReserverSoc
-    GROUP BY CodeAGRet, DateFinSoc
-    UNION ALL
-    SELECT
-        CodeAGRet AS CodeAg, 
-        DateFinClt AS DateAg, 
-        COUNT(*) AS NbRet
-    FROM BOCHENSOHANDSOME.S3_ReserverPrive
-    GROUP BY CodeAGRet, DateFinClt
-)
-SELECT
-    NVL(d.CodeAg, a.CodeAg) AS CodeAg,
-    NVL(d.DateAg, a.DateAg) AS DateAg,
-    NVL(d.NbDep, 0) AS NbDep,
-    NVL(a.NbRet, 0) AS NbRet,
-    NVL(d.NbDep, 0) - NVL(a.NbRet, 0) AS Diff_Dep_Ret
-FROM DEPARTURE d
-FULL OUTER JOIN ARRIVAL a
-    ON d.CodeAg = a.CodeAg AND d.DateAg = a.DateAg
-ORDER BY CodeAg, DateAg;
-
-ALTER TABLE FAIT_R_DEPLACEMENT
-ADD CONSTRAINT PK_Fait_Deplacement PRIMARY KEY (CodeAg, DateAg);
