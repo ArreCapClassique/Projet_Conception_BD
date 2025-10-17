@@ -1,0 +1,7 @@
+BEGIN
+   FOR t IN (SELECT table_name FROM user_tables) LOOP
+      EXECUTE IMMEDIATE 'GRANT SELECT ON ' || t.table_name || ' TO BOCHENTHEHANDSOME';
+      EXECUTE IMMEDIATE 'GRANT REFERENCES ON ' || t.table_name || ' TO BOCHENTHEHANDSOME';
+   END LOOP;
+END;
+/
