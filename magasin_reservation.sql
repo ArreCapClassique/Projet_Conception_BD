@@ -1,19 +1,21 @@
 BEGIN
     -- Drop Fait and Dimension constraints first to avoid dependency errors
     FOR c IN (
-        SELECT constraint_name, table_name 
-        FROM user_constraints 
-        WHERE constraint_name IN (
-            'PK_Fait_Reservation', 'PK_Fait_Deplacement',
-            'PK_ClientGene', 'PK_Temp', 'PK_Gamme', 'PK_Agence',
-            'FK_Fait_Reservation_ClientGene', 'FK_Fait_Reservation_Temp',
-            'FK_Fait_Reservation_Gamme', 'FK_Fait_Deplacement_Agence'
+        SELECT constraint_name, table_name
+        FROM user_constraints
+        WHERE table_name IN (
+            'FAIT_R_RESERVATION', 'FAIT_R_DEPLACEMENT',
+            'MD_R_CLIENTGENE', 'MD_R_TEMP', 'MD_R_GAMME', 'MD_R_AGENCE'
         )
+        AND constraint_type IN ('P', 'R', 'U')  -- Primary, Foreign, Unique
     ) LOOP
         BEGIN
-            EXECUTE IMMEDIATE 'ALTER TABLE ' || c.table_name || ' DROP CONSTRAINT ' || c.constraint_name;
+            EXECUTE IMMEDIATE 'ALTER TABLE ' || c.table_name || 
+                               ' DROP CONSTRAINT ' || c.constraint_name;
+            DBMS_OUTPUT.PUT_LINE('Dropped constraint ' || c.constraint_name || ' on ' || c.table_name);
         EXCEPTION
-            WHEN OTHERS THEN NULL;
+            WHEN OTHERS THEN
+                DBMS_OUTPUT.PUT_LINE('⚠️ Could not drop constraint ' || c.constraint_name || ' on ' || c.table_name || ': ' || SQLERRM);
         END;
     END LOOP;
 
@@ -22,7 +24,7 @@ BEGIN
         SELECT dimension_name 
         FROM user_dimensions 
         WHERE dimension_name IN (
-            'DIM_CLIENTGENE', 'DIM_TEMP', 'DIM_AGENCE'
+            'DIM_R_CLIENTGENE', 'DIM_R_TEMP', 'DIM_R_AGENCE'
         )
     ) LOOP
         BEGIN
@@ -37,8 +39,8 @@ BEGIN
         SELECT mview_name 
         FROM user_mviews 
         WHERE mview_name IN (
-            'FAIT_RESERVATION', 'FAIT_DEPLACEMENT',
-            'MD_CLIENTGENE', 'MD_TEMP', 'MD_GAMME', 'MD_AGENCE'
+            'FAIT_R_RESERVATION', 'FAIT_R_DEPLACEMENT',
+            'MD_R_CLIENTGENE', 'MD_R_TEMP', 'MD_R_GAMME', 'MD_R_AGENCE'
         )
     ) LOOP
         BEGIN
@@ -54,7 +56,7 @@ END;
 
 
 -- Dimension client générique
-CREATE MATERIALIZED VIEW MD_CLIENTGENE
+CREATE MATERIALIZED VIEW MD_R_CLIENTGENE
 BUILD IMMEDIATE
 REFRESH COMPLETE ON DEMAND AS
 SELECT
@@ -75,16 +77,19 @@ SELECT
     RegionC AS RegionCG
 FROM ED_CLIENT;
 
-CREATE DIMENSION DIM_CLIENTGENE
-    LEVEL CodeCG IS (MD_CLIENTGENE.CodeCG)
-    LEVEL VilleCG IS (MD_CLIENTGENE.VilleCG)
-    LEVEL RegionCG IS (MD_CLIENTGENE.RegionCG)
+CREATE DIMENSION DIM_R_CLIENTGENE
+    LEVEL CodeCG IS (MD_R_CLIENTGENE.CodeCG)
+    LEVEL VilleCG IS (MD_R_CLIENTGENE.VilleCG)
+    LEVEL RegionCG IS (MD_R_CLIENTGENE.RegionCG)
 HIERARCHY H_Clt (CodeCG CHILD OF VilleCG CHILD OF RegionCG)
 ATTRIBUTE CodeCG DETERMINES (NomCG, RueCG, CPCG);
 
+ALTER TABLE MD_R_CLIENTGENE
+    ADD CONSTRAINT PK_MD_R_CLIENTGENE PRIMARY KEY (CodeCG);
+
 
 -- Dimension Temporal
-CREATE MATERIALIZED VIEW MD_TEMP
+CREATE MATERIALIZED VIEW MD_R_TEMP
 BUILD IMMEDIATE
 REFRESH COMPLETE ON DEMAND AS
 SELECT DISTINCT
@@ -101,17 +106,20 @@ SELECT DISTINCT
     TO_CHAR(DateDebClt, 'YYYY') AS Annee
 FROM ED_ReserverPrive;
 
-CREATE DIMENSION DIM_TEMP
-    LEVEL DateDeb IS (MD_TEMP.DateDeb)
-    LEVEL semaine IS (MD_TEMP.semaine)
-    LEVEL mois IS (MD_TEMP.mois)
-    LEVEL annee IS (MD_TEMP.annee)
+CREATE DIMENSION DIM_R_TEMP
+    LEVEL DateDeb IS (MD_R_TEMP.DateDeb)
+    LEVEL semaine IS (MD_R_TEMP.semaine)
+    LEVEL mois IS (MD_R_TEMP.mois)
+    LEVEL annee IS (MD_R_TEMP.annee)
 HIERARCHY H_semaine (DateDeb CHILD OF semaine CHILD OF annee)
 HIERARCHY H_mois (DateDeb CHILD OF mois CHILD OF annee);
-
+    
+ALTER TABLE MD_R_TEMP
+    ADD CONSTRAINT PK_MD_R_TEMP PRIMARY KEY (DateDeb);
+    
 
 -- Dimension gamme
-CREATE MATERIALIZED VIEW MD_GAMME
+CREATE MATERIALIZED VIEW MD_R_GAMME
 BUILD IMMEDIATE
 REFRESH COMPLETE ON DEMAND AS
 SELECT
@@ -121,7 +129,7 @@ FROM ED_GAMME;
 
 
 -- Dimension agence
-CREATE MATERIALIZED VIEW MD_AGENCE
+CREATE MATERIALIZED VIEW MD_R_AGENCE
 BUILD IMMEDIATE
 REFRESH COMPLETE ON DEMAND AS
 SELECT
@@ -134,18 +142,18 @@ SELECT
     QuartierAG
 FROM BOCHENSOHANDSOME.S3_AGENCE;
 
-CREATE DIMENSION DIM_AGENCE
-    LEVEL CodeAg IS (MD_AGENCE.CodeAg)
-    LEVEL TypeAg IS (MD_AGENCE.TypeAg)
-    LEVEL QuartierAg IS (MD_AGENCE.QuartierAg)
-    LEVEL VilleAg IS (MD_AGENCE.VilleAg)
+CREATE DIMENSION DIM_R_AGENCE
+    LEVEL CodeAg IS (MD_R_AGENCE.CodeAg)
+    LEVEL TypeAg IS (MD_R_AGENCE.TypeAg)
+    LEVEL QuartierAg IS (MD_R_AGENCE.QuartierAg)
+    LEVEL VilleAg IS (MD_R_AGENCE.VilleAg)
 HIERARCHY H_TypeAg (CodeAg CHILD OF TypeAg)
 HIERARCHY H_Agence (CodeAg CHILD OF QuartierAg CHILD OF VilleAg)
 ATTRIBUTE CodeAg DETERMINES (NomAg, CPAg, RueAg);
 
 
 -- Fait réservation
-CREATE MATERIALIZED VIEW FAIT_RESERVATION
+CREATE MATERIALIZED VIEW FAIT_R_RESERVATION
 BUILD IMMEDIATE 
 REFRESH COMPLETE ON DEMAND AS
 SELECT
@@ -166,17 +174,19 @@ SELECT
 FROM ED_ReserverPrive
 GROUP BY CodeC, CodeG, DateDebClt;
 
-ALTER TABLE FAIT_RESERVATION
+ALTER TABLE FAIT_R_RESERVATION
 ADD CONSTRAINT PK_Fait_Reservation PRIMARY KEY (CodeCG, CodeG, DateDeb);
 
-ALTER TABLE FAIT_RESERVATION
-ADD CONSTRAINT FK_Fait_Reservation_ClientGene FOREIGN KEY (CodeCG) REFERENCES MD_CLIENTGENE(CodeCG)
-ADD CONSTRAINT FK_Fait_Reservation_Temp FOREIGN KEY (DateDeb) REFERENCES MD_TEMP(DateDeb)
-ADD CONSTRAINT FK_Fait_Reservation_Gamme FOREIGN KEY (CodeG) REFERENCES MD_GAMME(CodeG);
+ALTER TABLE FAIT_R_RESERVATION
+ADD CONSTRAINT FK_Fait_Reservation_ClientGene FOREIGN KEY (CodeCG) REFERENCES MD_R_CLIENTGENE(CodeCG);
+ALTER TABLE FAIT_R_RESERVATION
+ADD CONSTRAINT FK_Fait_Reservation_Temp FOREIGN KEY (DateDeb) REFERENCES MD_R_TEMP(DateDeb);
+ALTER TABLE FAIT_R_RESERVATION
+ADD CONSTRAINT FK_Fait_Reservation_Gamme FOREIGN KEY (CodeG) REFERENCES MD_R_GAMME(CodeG);
 
 
 -- Fait déplacement
-CREATE MATERIALIZED VIEW FAIT_DEPLACEMENT
+CREATE MATERIALIZED VIEW FAIT_R_DEPLACEMENT
 BUILD IMMEDIATE
 REFRESH COMPLETE ON DEMAND AS
 WITH DEPARTURE AS (
@@ -220,5 +230,5 @@ FULL OUTER JOIN ARRIVAL a
     ON d.CodeAg = a.CodeAg AND d.DateAg = a.DateAg
 ORDER BY CodeAg, DateAg;
 
-ALTER TABLE FAIT_DEPLACEMENT
+ALTER TABLE FAIT_R_DEPLACEMENT
 ADD CONSTRAINT PK_Fait_Deplacement PRIMARY KEY (CodeAg, DateAg);
