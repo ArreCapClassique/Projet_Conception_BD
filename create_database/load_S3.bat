@@ -1,16 +1,10 @@
 @echo off
-REM Load S3 (Agences + reservations/rentals with dep/ret agencies)
-REM Uses the same connection style as your ED loader.
+setlocal ENABLEDELAYEDEXPANSION
 
-setlocal EnableExtensions EnableDelayedExpansion
-
-REM ---- Connection (hardcoded per your setup) ----
 set CONN=BOCHENSOHANDSOME/BOCHENSOHANDSOME@//127.0.0.1:1550/siip
 
-REM ---- Move to this script's directory ----
 pushd "%~dp0"
 
-REM ---- Folders ----
 if not exist "log" mkdir "log"
 
 REM ---- Keep UTF-8 accents consistent ----
@@ -25,7 +19,6 @@ if errorlevel 1 (
   exit /b 1
 )
 
-REM ---- Load order: agence -> reserverprive -> reserversoc -> louer ----
 for %%T in (agence reserverprive reserversoc louer) do (
   echo Loading S3_%%T...
   sqlldr userid=%CONN% control=scripts\S3_%%T.ctl data=data\S3_%%T.csv ^

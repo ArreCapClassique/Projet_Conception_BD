@@ -1,0 +1,124 @@
+CodeCO,NomCO,MaisonMere,DatecreatCO,DateFinCO,CodeTY
+1,Acura,Honda,1986-01-01,,1
+2,Bugatti,Volkswagen,1909-01-01,,2
+3,Cadillac,General Motors,1902-01-01,,1
+4,Chrysler,Stellantis,1925-01-01,,1
+5,Daihatsu,Toyota,1907-01-01,,1
+6,Datsun,Renault-Nissan,1913-01-01,,1
+7,Genesis,Hyundai Motor Group,2015-01-01,,1
+8,GMC,General Motors,1901-01-01,,1
+9,Infiniti,Renault-Nissan,1989-01-01,,1
+10,Isuzu,Isuzu,1934-01-01,,1
+11,Jaguar,Jaguar Land Rover,1935-01-01,,2
+12,Lada,Renault-Nissan,1966-01-01,,3
+13,Lancia,Stellantis,1906-01-01,,3
+14,Land Rover,Jaguar Land Rover,1947-01-01,,1
+15,Lincoln,Ford,1917-01-01,,1
+16,Lotus,Geely,1952-01-01,,1
+17,Maxus,Shanghai Automotive IC,2011-01-01,,1
+18,McLaren,McLaren,1989-01-01,,1
+19,MG,Shanghai Automotive IC,1924-01-01,,3
+20,Mini,BMW,1969-01-01,,1
+21,RAM,Stellantis,2009-01-01,,1
+22,Rolls-Royce,BMW,1904-01-01,,2
+23,Samsung,Renault-Nissan,1994-01-01,,1
+24,Smart,DaimlerGeely,1995-01-01,,1
+25,SsangYong,Mahindra,1954-01-01,,3
+26,Tata,Tata Motors,1945-01-01,,3
+27,Vauxhall,Stellantis,1903-01-01,,3
+28,Toyota,Toyota,1937-01-01,,3
+29,Volkswagen,Volkswagen,1937-01-01,,3
+30,Alpine,Renault-Nissan,1955-01-01,,1
+31,Aston-Martin,Prodrive,1913-01-01,,2
+32,Audi,Volkswagen,1909-01-01,,1
+33,Bentley,Volkswagen,1919-01-01,,2
+34,BMW,BMW,1916-01-01,,1
+35,Buick,General Motors,1903-01-01,,1
+36,Chevrolet,General Motors,1911-01-01,,3
+37,Citroën,Stellantis,1919-01-01,,3
+38,Cupra,Volkswagen,2018-01-01,,1
+39,Dacia,Renault-Nissan,1966-01-01,,3
+40,Dodge,Stellantis,1914-01-01,,3
+41,DS Automobiles,Stellantis,2015-01-01,,1
+42,Ferrari,Ferrari,1947-01-01,,2
+43,Fiat,Stellantis,1899-01-01,,3
+44,Ford,Ford,1903-01-01,,3
+45,Honda,Honda,1948-01-01,,3
+46,Hyundai,Hyundai Motor Group,1967-01-01,,3
+47,Jeep,Stellantis,1937-01-01,,1
+48,Kia,Hyundai Motor Group,1974-01-01,,3
+49,Lamborghini,Volkswagen,1963-01-01,,2
+50,Lexus,Toyota,1989-01-01,,1
+51,Mazda,Mazda,1920-01-01,,3
+52,Mercedes-Benz,Daimler,1926-01-01,,1
+53,Mitsubishi,Renault-Nissan,1917-01-01,,3
+54,Neta Automobile,Hozon Auto,1934-01-01,,3
+55,Nissan,Renault-Nissan,1934-01-01,,3
+56,Opel,Stellantis,1899-01-01,,3
+57,Peugeot,Stellantis,1896-01-01,,3
+58,Porsche,Volkswagen,1931-01-01,,2
+59,Renault,Renault-Nissan,1898-01-01,,3
+60,Seat,Volkswagen,1950-01-01,,3
+61,Škoda,Volkswagen,1895-01-01,,3
+62,Subaru,Fuji Heavy Industries,1953-01-01,,3
+63,Suzuki,Suzuki,1954-01-01,,3
+64,Tesla,Tesla,2003-01-01,,1
+65,Volvo,Geely,1927-01-01,,1
+66,Alfa Romeo,Stellantis,1910-01-01,,1
+67,Maserati,Stellantis,1914-01-01,,2
+68,Brilliance,Brilliance China Automotive,1992-01-01,,4
+69,Chang'an Motors,Chang'an Motors,1990-01-01,,4
+70,Chery,Chery Automobiles,1997-01-01,,4
+71,Derways,Derways,2004-01-01,,1
+72,Dongfeng,Dongfeng,1969-01-01,,4
+73,FAW,First Automobile Works,1953-01-01,,4
+74,GAZ,SibAl,1932-01-01,,4
+75,Geely,Geely,1986-01-01,,4
+76,Hafei,Avic,1994-01-01,,4
+77,Heng Chi,Evergrande,2019-01-01,,3
+78,Hindustan Motors,Hindustan Motors,1942-01-01,,4
+79,Hongqi,FAW,1958-01-01,,1
+80,Iran Khodro,Iran Khodro,1962-01-01,,4
+81,Karenjy,Le Relais,1980-01-01,,1
+82,Luxgen,Yulon Motor,2009-01-01,,1
+83,Mahindra,Mahindra & Mahindra,1947-01-01,,4
+84,Maruti,Suzuki,1981-01-01,,4
+85,Néo Motors,Néo Motors,2018-01-01,,3
+86,Pars Khodro,Saipa,1956-01-01,,4
+87,Perodua,Perodua,1993-01-01,,3
+88,Proton,Proton Edar,1985-01-01,,4
+89,UAZ,Ulyanovsky Avtomobilny Zavod,1941-01-01,,1
+90,ZAZ,ZAZ,1958-01-01,,4
+91,Abarth,Stellantis,1949-01-01,,2
+92,Alpina,BMW Group,1962-01-01,,2
+93,AMG,Daimler,1967-01-01,,2
+94,Brabus,Brabus,1977-01-01,,2
+95,Caterham,Caterham,1959-01-01,,2
+96,COURB,COURB,2007-01-01,,2
+97,Mopar,Stellantis,1937-01-01,,2
+98,Pininfarina,Mahindra,2018-01-01,,2
+99,SRT,Stellantis,2003-01-01,,2
+100,Abadal,Abadal,1912-01-01,1930-01-01,5
+101,AAA,Ateliers d'Automobiles et d'Aviation (en),1919-01-01,1920-01-01,5
+102,Able,Able,1920-01-01,1925-01-01,5
+103,ACMA,Piaggio,1957-01-01,1962-01-01,5
+104,AEM,Societé d'Application Electro-Mécanique (en),1921-01-01,1927-01-01,5
+105,Ajams (en),Ajams (de),1919-01-01,1922-01-01,5
+106,Allain et Niguet,Allain et Niguet (de),1921-01-01,1923-01-01,5
+107,Alba,Automobiles Alba (de),1913-01-01,1928-01-01,5
+108,Alcyon,Alcyon,1890-01-01,1963-01-01,5
+109,Alda,Fernand Charron,1912-01-01,1922-01-01,5
+110,Allstate,Kaiser-Frazer Corp.,1952-01-01,1953-01-01,5
+111,Alma,Établissements Alma (de),1926-01-01,1929-01-01,5
+112,Alphi (en),Alphi (de),1928-01-01,1931-01-01,5
+113,Alva,Automobiles Alva,1913-01-01,1923-01-01,5
+114,AMC,Chrysler,1954-01-01,1987-01-01,5
+115,Amilcar,Hotchkiss,1921-01-01,1939-01-01,5
+116,Angeli (de),Automobiles Angeli (de),1921-01-01,1932-01-01,5
+117,Antony,Automobiles Antony (de),1922-01-01,1927-01-01,5
+118,Ariès,Groupe PSA,1903-01-01,1938-01-01,5
+119,Armor,Armor,1910-01-01,1957-01-01,5
+120,ARO,Tout-terrain,1957-01-01,2007-01-01,5
+121,Artega,Sport,2006-01-01,2012-01-01,5
+122,Auburn,Cord Corporation (1926 à fin),1900-01-01,1936-01-01,5
+123,Austin,MG Rover,1906-01-01,1989-01-01,5
