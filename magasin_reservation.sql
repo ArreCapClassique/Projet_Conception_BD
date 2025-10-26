@@ -4,8 +4,8 @@ BEGIN
         SELECT constraint_name, table_name
         FROM user_constraints
         WHERE table_name IN (
-            'FAIT_R_RESERVATION', 'FAIT_R_DEPLACEMENT',
-            'MD_R_CLIENTGENE', 'MD_R_TEMP', 'MD_R_GAMME', 'MD_R_AGENCE'
+            'FAIT_R_RESERVATION',
+            'MD_R_CLIENTGENE', 'MD_R_TEMP', 'MD_R_GAMME'
         )
         AND constraint_type IN ('P', 'R', 'U')
     ) LOOP
@@ -39,8 +39,8 @@ BEGIN
         SELECT mview_name 
         FROM user_mviews 
         WHERE mview_name IN (
-            'FAIT_R_RESERVATION', 'FAIT_R_DEPLACEMENT',
-            'MD_R_CLIENTGENE', 'MD_R_TEMP', 'MD_R_GAMME', 'MD_R_AGENCE'
+            'FAIT_R_RESERVATION',
+            'MD_R_CLIENTGENE', 'MD_R_TEMP', 'MD_R_GAMME'
         )
     ) LOOP
         BEGIN
@@ -60,16 +60,16 @@ CREATE MATERIALIZED VIEW MD_R_CLIENTGENE
 BUILD IMMEDIATE
 REFRESH COMPLETE ON DEMAND AS
 SELECT
-    CONCAT('S_', CodeSoc) AS CodeCG,
+    'S:' || CodeSoc AS CodeCG,
     NomSoc AS NomCG,
     RueSoc AS RueCG,
     CPSoc AS CPCG,
     VilleSoc AS VilleCG,
-    'NULL' AS RegionCG
+    CAST(NULL AS VARCHAR2(50)) AS RegionCG
 FROM ED_SOCIETE
 UNION ALL
 SELECT
-    CONCAT('C_', CodeC) AS CodeCG,
+    'C:' || TO_CHAR(CodeC) AS CodeCG,
     TRIM(NomC || ' ' || PrenomC) AS NomCG,
     RueC AS RueCG,
     CPC AS CPCG,
@@ -77,15 +77,15 @@ SELECT
     RegionC AS RegionCG
 FROM ED_CLIENT;
 
+ALTER TABLE MD_R_CLIENTGENE
+    ADD CONSTRAINT PK_MD_R_CLIENTGENE PRIMARY KEY (CodeCG);
+
 CREATE DIMENSION DIM_R_CLIENTGENE
     LEVEL CodeCG IS (MD_R_CLIENTGENE.CodeCG)
     LEVEL VilleCG IS (MD_R_CLIENTGENE.VilleCG)
     LEVEL RegionCG IS (MD_R_CLIENTGENE.RegionCG)
 HIERARCHY H_Clt (CodeCG CHILD OF VilleCG CHILD OF RegionCG)
 ATTRIBUTE CodeCG DETERMINES (NomCG, RueCG, CPCG);
-
-ALTER TABLE MD_R_CLIENTGENE
-    ADD CONSTRAINT PK_MD_R_CLIENTGENE PRIMARY KEY (CodeCG);
 
 
 -- Dimension Temporal
@@ -106,6 +106,9 @@ SELECT DISTINCT
     TO_CHAR(DateDebClt, 'YYYY') AS Annee
 FROM ED_ReserverPrive;
 
+ALTER TABLE MD_R_TEMP
+    ADD CONSTRAINT PK_MD_R_TEMP PRIMARY KEY (DateDeb);
+
 CREATE DIMENSION DIM_R_TEMP
     LEVEL DateDeb IS (MD_R_TEMP.DateDeb)
     LEVEL semaine IS (MD_R_TEMP.semaine)
@@ -113,9 +116,6 @@ CREATE DIMENSION DIM_R_TEMP
     LEVEL annee IS (MD_R_TEMP.annee)
 HIERARCHY H_semaine (DateDeb CHILD OF semaine CHILD OF annee)
 HIERARCHY H_mois (DateDeb CHILD OF mois CHILD OF annee);
-    
-ALTER TABLE MD_R_TEMP
-    ADD CONSTRAINT PK_MD_R_TEMP PRIMARY KEY (DateDeb);
     
 
 -- Dimension gamme
@@ -130,25 +130,25 @@ FROM ED_GAMME;
 
 -- Fait réservation
 CREATE MATERIALIZED VIEW FAIT_R_RESERVATION
-BUILD IMMEDIATE 
+BUILD IMMEDIATE
 REFRESH COMPLETE ON DEMAND AS
 SELECT
-    CONCAT('S_', CodeSoc) AS CodeCG,
+    'S:' || CodeSoc AS CodeCG,
     CodeG,
     DateDebSoc AS DateDeb,
     COUNT(*) AS NbReser,
     SUM(DateFinSoc - DateDebSoc) AS DureeReser
 FROM ED_ReserverSoc
-GROUP BY CodeSoc, CodeG, DateDebSoc
+GROUP BY 'S:' || CodeSoc, CodeG, DateDebSoc
 UNION ALL
 SELECT
-    CONCAT('C_', CodeC) AS CodeCG,
+    'C:' || TO_CHAR(CodeC) AS CodeCG,
     CodeG,
     DateDebClt AS DateDeb,
     COUNT(*) AS NbReser,
     SUM(DateFinClt - DateDebClt) AS DureeReser
 FROM ED_ReserverPrive
-GROUP BY CodeC, CodeG, DateDebClt;
+GROUP BY 'C:' || TO_CHAR(CodeC), CodeG, DateDebClt;
 
 ALTER TABLE FAIT_R_RESERVATION
 ADD CONSTRAINT PK_Fait_Reservation PRIMARY KEY (CodeCG, CodeG, DateDeb);
