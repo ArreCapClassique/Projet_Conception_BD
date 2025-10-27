@@ -66,7 +66,7 @@ SELECT
     CPSoc AS CPCG,
     VilleSoc AS VilleCG,
     CAST(NULL AS VARCHAR2(50)) AS RegionCG
-FROM ED_SOCIETE
+FROM BOCHENTHEHANDSOME.ED_SOCIETE
 UNION ALL
 SELECT
     'C:' || TO_CHAR(CodeC) AS CodeCG,
@@ -75,7 +75,7 @@ SELECT
     CPC AS CPCG,
     VilleC AS VilleCG,
     RegionC AS RegionCG
-FROM ED_CLIENT;
+FROM BOCHENTHEHANDSOME.ED_CLIENT;
 
 ALTER TABLE MD_R_CLIENTGENE
     ADD CONSTRAINT PK_MD_R_CLIENTGENE PRIMARY KEY (CodeCG);
@@ -97,14 +97,14 @@ SELECT DISTINCT
     TO_CHAR(DateDebSoc, 'YYYY-IW') AS Semaine,
     TO_CHAR(DateDebSoc, 'YYYY-MM') AS Mois,
     TO_CHAR(DateDebSoc, 'YYYY') AS Annee
-FROM ED_ReserverSoc
+FROM BOCHENTHEHANDSOME.ED_ReserverSoc
 UNION
 SELECT DISTINCT
     DateDebClt AS DateDeb,
     TO_CHAR(DateDebClt, 'YYYY-IW') AS Semaine,
     TO_CHAR(DateDebClt, 'YYYY-MM') AS Mois,
     TO_CHAR(DateDebClt, 'YYYY') AS Annee
-FROM ED_ReserverPrive;
+FROM BOCHENTHEHANDSOME.ED_ReserverPrive;
 
 ALTER TABLE MD_R_TEMP
     ADD CONSTRAINT PK_MD_R_TEMP PRIMARY KEY (DateDeb);
@@ -125,7 +125,7 @@ REFRESH COMPLETE ON DEMAND AS
 SELECT
     CodeG,
     NomG
-FROM ED_GAMME;
+FROM BOCHENTHEHANDSOME.ED_GAMME;
 
 
 -- Fait réservation
@@ -138,7 +138,7 @@ SELECT
     DateDebSoc AS DateDeb,
     COUNT(*) AS NbReser,
     SUM(DateFinSoc - DateDebSoc) AS DureeReser
-FROM ED_ReserverSoc
+FROM BOCHENTHEHANDSOME.ED_ReserverSoc
 GROUP BY 'S:' || CodeSoc, CodeG, DateDebSoc
 UNION ALL
 SELECT
@@ -147,7 +147,7 @@ SELECT
     DateDebClt AS DateDeb,
     COUNT(*) AS NbReser,
     SUM(DateFinClt - DateDebClt) AS DureeReser
-FROM ED_ReserverPrive
+FROM BOCHENTHEHANDSOME.ED_ReserverPrive
 GROUP BY 'C:' || TO_CHAR(CodeC), CodeG, DateDebClt;
 
 ALTER TABLE FAIT_R_RESERVATION

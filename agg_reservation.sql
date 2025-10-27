@@ -3,7 +3,7 @@ BEGIN
         SELECT mview_name 
         FROM user_mviews 
         WHERE mview_name IN (
-            'AGG_R1', 'AGG_R2', 'MAGG_R3'
+            'AGG_R1', 'AGG_R2', 'AGG_R3'
         )
     ) LOOP
         BEGIN
