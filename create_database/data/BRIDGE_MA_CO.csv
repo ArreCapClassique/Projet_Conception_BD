@@ -1,0 +1,65 @@
+CodeMA,NomMA,CodeCO,NomCO,MatchType,Confidence,SourceNote,ValidFrom,ValidTo,IsCurrent
+1,Abarth,91,Abarth,EXACT,100,normalized exact match,2025-10-17,,1
+2,Alfa Romeo,66,Alfa Romeo,EXACT,100,normalized exact match,2025-10-17,,1
+3,Alpine,30,Alpine,EXACT,100,normalized exact match,2025-10-17,,1
+4,Aston Martin,31,Aston-Martin,EXACT,100,normalized exact match,2025-10-17,,1
+5,Audi,32,Audi,EXACT,100,normalized exact match,2025-10-17,,1
+6,Austin,123,Austin,EXACT,100,normalized exact match,2025-10-17,,1
+7,Austin Healey,,,UNMATCHED,0,no match found,2025-10-17,,1
+8,Bentley,33,Bentley,EXACT,100,normalized exact match,2025-10-17,,1
+9,BMW,34,BMW,EXACT,100,normalized exact match,2025-10-17,,1
+10,Cadillac,3,Cadillac,EXACT,100,normalized exact match,2025-10-17,,1
+11,Chatenet,,,UNMATCHED,0,no match found,2025-10-17,,1
+12,Chevrolet,36,Chevrolet,EXACT,100,normalized exact match,2025-10-17,,1
+13,Chrysler,4,Chrysler,EXACT,100,normalized exact match,2025-10-17,,1
+14,Citroen,37,Citroën,EXACT,100,normalized exact match,2025-10-17,,1
+15,Cupra,38,Cupra,EXACT,100,normalized exact match,2025-10-17,,1
+16,Dacia,39,Dacia,EXACT,100,normalized exact match,2025-10-17,,1
+17,Dodge,40,Dodge,EXACT,100,normalized exact match,2025-10-17,,1
+18,DS,41,DS Automobiles,EXACT,100,normalized exact match,2025-10-17,,1
+19,Ferrari,42,Ferrari,EXACT,100,normalized exact match,2025-10-17,,1
+20,Fiat,43,Fiat,EXACT,100,normalized exact match,2025-10-17,,1
+21,Ford,44,Ford,EXACT,100,normalized exact match,2025-10-17,,1
+22,GMC,8,GMC,EXACT,100,normalized exact match,2025-10-17,,1
+23,Honda,45,Honda,EXACT,100,normalized exact match,2025-10-17,,1
+24,Ineos,,,UNMATCHED,0,no match found,2025-10-17,,1
+25,Innocenti,,,UNMATCHED,0,no match found,2025-10-17,,1
+26,Isuzu,10,Isuzu,EXACT,100,normalized exact match,2025-10-17,,1
+27,Iveco,,,UNMATCHED,0,no match found,2025-10-17,,1
+28,Jaguar,11,Jaguar,EXACT,100,normalized exact match,2025-10-17,,1
+29,Jeep,47,Jeep,EXACT,100,normalized exact match,2025-10-17,,1
+30,Kia,48,Kia,EXACT,100,normalized exact match,2025-10-17,,1
+31,Lada,12,Lada,EXACT,100,normalized exact match,2025-10-17,,1
+32,Lamborghini,49,Lamborghini,EXACT,100,normalized exact match,2025-10-17,,1
+33,Lancia,13,Lancia,EXACT,100,normalized exact match,2025-10-17,,1
+34,Land Rover,14,Land Rover,EXACT,100,normalized exact match,2025-10-17,,1
+35,Lexus,50,Lexus,EXACT,100,normalized exact match,2025-10-17,,1
+36,Lincoln,15,Lincoln,EXACT,100,normalized exact match,2025-10-17,,1
+37,Lotus,16,Lotus,EXACT,100,normalized exact match,2025-10-17,,1
+38,Maserati,67,Maserati,EXACT,100,normalized exact match,2025-10-17,,1
+39,Mazda,51,Mazda,EXACT,100,normalized exact match,2025-10-17,,1
+40,McLaren,18,McLaren,EXACT,100,normalized exact match,2025-10-17,,1
+41,Mercedes,52,Mercedes-Benz,EXACT,100,normalized exact match,2025-10-17,,1
+42,MG,19,MG,EXACT,100,normalized exact match,2025-10-17,,1
+43,Mini,20,Mini,EXACT,100,normalized exact match,2025-10-17,,1
+44,Mitsubishi,53,Mitsubishi,EXACT,100,normalized exact match,2025-10-17,,1
+45,Morgan,,,UNMATCHED,0,no match found,2025-10-17,,1
+46,Nissan,55,Nissan,EXACT,100,normalized exact match,2025-10-17,,1
+47,Opel,56,Opel,EXACT,100,normalized exact match,2025-10-17,,1
+48,Peugeot,57,Peugeot,EXACT,100,normalized exact match,2025-10-17,,1
+49,Porsche,58,Porsche,EXACT,100,normalized exact match,2025-10-17,,1
+50,Renault,59,Renault,EXACT,100,normalized exact match,2025-10-17,,1
+51,Rolls Royce,22,Rolls-Royce,EXACT,100,normalized exact match,2025-10-17,,1
+52,Saab,,,UNMATCHED,0,no match found,2025-10-17,,1
+53,Seat,60,Seat,EXACT,100,normalized exact match,2025-10-17,,1
+54,Skoda,61,Škoda,EXACT,100,normalized exact match,2025-10-17,,1
+55,Smart,24,Smart,EXACT,100,normalized exact match,2025-10-17,,1
+56,Subaru,62,Subaru,EXACT,100,normalized exact match,2025-10-17,,1
+57,Sunbeam,,,UNMATCHED,0,no match found,2025-10-17,,1
+58,Suzuki,63,Suzuki,EXACT,100,normalized exact match,2025-10-17,,1
+59,Tesla,64,Tesla,EXACT,100,normalized exact match,2025-10-17,,1
+60,Toyota,28,Toyota,EXACT,100,normalized exact match,2025-10-17,,1
+61,Triumph,,,UNMATCHED,0,no match found,2025-10-17,,1
+62,Volkswagen,29,Volkswagen,EXACT,100,normalized exact match,2025-10-17,,1
+63,Volvo,65,Volvo,EXACT,100,normalized exact match,2025-10-17,,1
+64,Xpeng,,,UNMATCHED,0,no match found,2025-10-17,,1

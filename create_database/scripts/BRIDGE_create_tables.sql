@@ -1,0 +1,22 @@
+BEGIN
+    EXECUTE IMMEDIATE 'DROP TABLE BRIDGE_MA_CO PURGE';
+EXCEPTION
+    WHEN OTHERS THEN
+        IF SQLCODE != -942 THEN RAISE; END IF;
+END;
+/
+
+CREATE TABLE BRIDGE_MA_CO (
+  CodeMA        NUMBER         NOT NULL,         -- FK → ED_MARQUE
+  CodeCO        NUMBER         NULL,             -- FK → S1_CONSTRUCTEUR (nullable)
+  MatchType     VARCHAR2(10)   NULL,         -- EXACT | ALIAS | FUZZY | PARENT | MANUAL
+  Confidence    NUMBER(3)      NULL,             -- 0–100
+  SourceNote    VARCHAR2(200)  NULL,
+  ValidFrom     DATE           DEFAULT SYSDATE,
+  ValidTo       DATE           NULL,
+  IsCurrent     NUMBER(1)      DEFAULT 1,
+  CONSTRAINT PK_BRIDGE_MA_CO PRIMARY KEY (CodeMA)
+);
+
+CREATE INDEX IX_BRIDGE_MA_CO_CODEMA ON BRIDGE_MA_CO(CodeMA);
+EXIT
