@@ -19,7 +19,7 @@ if errorlevel 1 (
   exit /b 1
 )
 
-for %%T in (MA_CO) do (
+for %%T in (MA_CO, VILLE_REGION) do (
   echo Loading BRIDGE_%%T...
   sqlldr userid=%CONN% control=scripts\BRIDGE_%%T.ctl data=data\BRIDGE_%%T.csv ^
     log=log\BRIDGE_%%T.log bad=log\BRIDGE_%%T.bad direct=true errors=100000 skip=1 ^
