@@ -31,6 +31,15 @@ for %%T in (marque gamme vehicule societe client reserverprive reserversoc louer
   )
 )
 
+echo Running ED data corrections...
+sqlplus -L -s %CONN% @scripts\correction_ED.sql 1>log\correction_ED.out 2>log\correction_ED.err
+if errorlevel 1 (
+  echo ED correction failed. See log\correction_ED.err
+  type log\correction_ED.err
+  popd
+  exit /b 1
+)
+
 echo ED load completed successfully.
 popd
 endlocal
